@@ -458,7 +458,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 </header>
 
 
-              <section id="ad-api-documentation-hero" class="padding-tb-75 text-center">
+                     <section id="ad-api-documentation-hero" class="padding-tb-75 text-center">
             <div class="container">
         <h1>API Documentation</h1>
         <h2>Implementation Guide - Find Phone, Email, Name and Address</h2>
@@ -466,13 +466,14 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
     </section>
 
 
-            <section id="ad-api-introduction" class="padding-tb-50">
+            <section id="ad-api-introduction" class="padding-tb-50" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
         <div class="container">
 
-        <div class="ad-people-search-api-left-btn">
+            <div id="sb-ad-overlay"></div>
+        <div class="ad-sidebar-submenu">
+                    <div class="ad-people-search-api-left-btn">
             <span class="fa-solid fa-square-caret-left"></span>
             </div>
-        <div class="ad-sidebar-submenu">
 <ul>
 <li><a href="#">Overview</a></li>
 <li><a href="#" class="ad-people-search-api-btn">People Search API
@@ -498,6 +499,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 <li><a href="#!">Property Search</a></li>
 </ul>
             </div>
+            
 
         <div id="ad-api-documentation-header">
             <h2>Introduction</h2>
@@ -517,7 +519,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
 
 
             <!-- How do I get access to APIs? -->
-    <section class="ad-search-fees-account-setup padding-tb-75">
+    <section class="ad-search-fees-account-setup padding-tb-75" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
     <div class="container aos-init aos-animate" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
         <div class="orange-border-2">
       <h2>Search Fees and Account Setup</h2>
@@ -550,7 +552,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
     <p>The request should be sent to Searchbug using the following URL format over HTTPS:</p>
     
 
-    <div class="ad-scroll-link">
+    <div class="ad-scroll-link" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
     https://data.searchbug.com/api/search.aspx CO_CODE=&PASS=&TYPE=&FNAME=&MNAME=&LNAME=&ADDRESS=
         </div>
 
@@ -566,7 +568,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ctl34', 'ctl01', [], [], [], 
     </ul>
 
 
-    <table class="ad-api-documentation-table">
+    <table class="ad-api-documentation-table" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
   <thead>
     <tr>
       <th scope="col">&lt;AccountID&gt;</th>
@@ -602,9 +604,6 @@ Use api_person2 for Advanced Person Search
 
 
 <p>Is a search option code. This field is optional. When search option code is specified, we will search based on your instructions, regardless of what’s on the query string. For example, if you are looking for email or phone number and your URL has person’s name and full address:</p>
-
-
-
 <p class="ad-scroll-link-mobile">FNAME=Carlos&LNAME=Torres&ADDRESS=123+Main+St&CITY=Miami&STATE=FL</p>
 
 <p>If you specify &SRCH=ns (stands for name and state), we will search using first name, last name and state. Street address (e.g. ADDRESS=123+Main+St) and city (e.g. CITY=Miami) will be ignored. These two queries will return the same results:</p>
@@ -642,7 +641,7 @@ Use api_person2 for Advanced Person Search
 
 <h2 class="mt-4">All search fields below are optional. See Valid Search Combinations below.</h2>
 
-<table class="ad-api-documentation-table mt-4">
+<table class="ad-api-documentation-table mt-4" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
   <thead>
     <tr>
       <th scope="col">&lt;FNAME&gt;</th>
@@ -717,23 +716,23 @@ Use api_person2 for Advanced Person Search
     <p>To check your current prepaid balance, please use the following URL format over HTTPS</p>
 
 
-<div class="ad-scroll-link">
+<div class="ad-scroll-link" data-aos="fade" data-aos-duration="1500" data-aos-once="true">
 https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=api_person2
     </div>
 
 
-<div class="col mt-4 ad-api-xml-json-code-container">                
+<div class="col mt-4 ad-api-xml-json-code-container" data-aos="fade" data-aos-duration="1500" data-aos-once="true">                
                 <div class="sb-white-bg ad-api-xml-json-code">
     <pre class="sb-api-documentation-direction-api">
-&lt;RESULTS&gt;
-    &lt;API_TYPE&gt;<span class="ad-api-xml-json-code-black">api_loc2</span>&lt;/API_TYPE&gt;
-    &lt;API_NAME&gt;<span class="ad-api-xml-json-code-black">API - Line Type and Carrier (Standard)</span>&lt;/API_NAME&gt;
-    &lt;DAILY&gt;<span class="ad-api-xml-json-code-black">1</span>&lt;/DAILY&gt;
-    &lt;MONTHLY&gt;<span class="ad-api-xml-json-code-black">4</span>&lt;/MONTHLY&gt;
-    &lt;RATE&gt;<span class="ad-api-xml-json-code-black">0.0100</span>&lt;/RATE&gt;
-    &lt;BALANCE&gt;<span class="ad-api-xml-json-code-black">47.72</span>&lt;/BALANCE&gt;
-    &lt;PREPAID&gt;<span class="ad-api-xml-json-code-black">100.00</span>&lt;/PREPAID&gt;
-    &lt;DATE&gt;<span class="ad-api-xml-json-code-black">01/12/2023</span>&lt;/DATE&gt;
+<span class="ad-api-xml-json-code-black">&lt;</span>RESULTS<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>API_TYPE<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">api_loc2</span><span class="ad-api-xml-json-code-black">&lt;</span>/API_TYPE<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>API_NAME<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">API - Line Type and Carrier (Standard)</span><span class="ad-api-xml-json-code-black">&lt;</span>/API_NAME<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>DAILY<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">1</span><span class="ad-api-xml-json-code-black">&lt;</span>/DAILY<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>MONTHLY<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">4</span><span class="ad-api-xml-json-code-black">&lt;</span>/MONTHLY<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>RATE<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">0.0100</span><span class="ad-api-xml-json-code-black">&lt;</span>/RATE<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>BALANCE<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">47.72</span><span class="ad-api-xml-json-code-black">&lt;</span>/BALANCE<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>PREPAID<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">100.00</span><span class="ad-api-xml-json-code-black">&lt;</span>/PREPAID<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>DATE<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">01/12/2023</span><span class="ad-api-xml-json-code-black">&lt;</span>/DATE<span class="ad-api-xml-json-code-black">&gt;</span>
 &lt;/RESULTS&gt;
 
     </pre>
@@ -745,20 +744,23 @@ https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=
 
 <p>Advanced Person Search API results XML example</p>
 
-<div class="col mt-4 ad-api-xml-json-code-container">                
+<div class="col mt-4 ad-api-xml-json-code-container" data-aos="fade" data-aos-duration="1500" data-aos-once="true">                
                 <div class="sb-white-bg ad-api-xml-json-code">
     <pre class="sb-api-documentation-direction-xml">
-&lt;RESULTS&gt;
-    &lt;API_TYPE&gt;<span class="ad-api-xml-json-code-black">api_loc2</span>&lt;/API_TYPE&gt;
-    &lt;API_NAME&gt;<span class="ad-api-xml-json-code-black">API - Line Type and Carrier (Standard)</span>&lt;/API_NAME&gt;
-    &lt;DAILY&gt;<span class="ad-api-xml-json-code-black">1</span>&lt;/DAILY&gt;
-    &lt;MONTHLY&gt;<span class="ad-api-xml-json-code-black">4</span>&lt;/MONTHLY&gt;
-    &lt;RATE&gt;<span class="ad-api-xml-json-code-black">0.0100</span>&lt;/RATE&gt;
-    &lt;BALANCE&gt;<span class="ad-api-xml-json-code-black">47.72</span>&lt;/BALANCE&gt;
-    &lt;PREPAID&gt;<span class="ad-api-xml-json-code-black">100.00</span>&lt;/PREPAID&gt;
-    &lt;DATE&gt;<span class="ad-api-xml-json-code-black">01/12/2023</span>&lt;/DATE&gt;
-&lt;/RESULTS&gt;
-
+<span class="ad-api-xml-json-code-black">&lt;</span>result&gt;
+ <span class="ad-api-xml-json-code-black">&lt;</span>rows&gt;<span class="ad-api-xml-json-code-black">1</span><span class="ad-api-xml-json-code-black">&lt;</span>/rows<span class="ad-api-xml-json-code-black">&gt;</span>
+ <span class="ad-api-xml-json-code-black">&lt;</span>errors/<span class="ad-api-xml-json-code-black">&gt;</span>
+ <span class="ad-api-xml-json-code-black">&lt;</span>people<span class="ad-api-xml-json-code-black">&gt;</span>
+  <span class="ad-api-xml-json-code-black">&lt;</span>person<span class="ad-api-xml-json-code-black">&gt;</span>
+   <span class="ad-api-xml-json-code-black">&lt;</span>gender/<span class="ad-api-xml-json-code-black">&gt;</span>
+   <span class="ad-api-xml-json-code-black">&lt;</span>deceased<span class="ad-api-xml-json-code-black">&gt;</span><span class="ad-api-xml-json-code-black">No</span><span class="ad-api-xml-json-code-black">&lt;</span>/deceased<span class="ad-api-xml-json-code-black">&gt;</span>
+   <span class="ad-api-xml-json-code-black">&lt;</span>names<span class="ad-api-xml-json-code-black">&gt;</span>
+    <span class="ad-api-xml-json-code-black">&lt;</span>name<span class="ad-api-xml-json-code-black">&gt;</span>
+     <span class="ad-api-xml-json-code-black">&lt;</span>title/<span class="ad-api-xml-json-code-black">&gt;</span>
+     <span class="ad-api-xml-json-code-black">&lt;</span>firstName&gt;<span class="ad-api-xml-json-code-black">David</span><span class="ad-api-xml-json-code-black">&lt;</span>/firstName<span class="ad-api-xml-json-code-black">&gt;</span>
+     <span class="ad-api-xml-json-code-black">&lt;</span>middleName&gt;<span class="ad-api-xml-json-code-black">P</span><span class="ad-api-xml-json-code-black">&lt;</span>/middleName<span class="ad-api-xml-json-code-black">&gt;</span>
+     <span class="ad-api-xml-json-code-black">&lt;</span>lastName&gt;<span class="ad-api-xml-json-code-black">Baker</span><span class="ad-api-xml-json-code-black">&lt;</span>/lastName<span class="ad-api-xml-json-code-black">&gt;</span>
+     <span class="ad-api-xml-json-code-black">&lt;</span>nameSuffix/<span class="ad-api-xml-json-code-black">&gt;</span>
     </pre>
         </div>               
                 </div>
@@ -766,48 +768,44 @@ https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=
 
             <p class="mt-4">Advanced Person Search API results JSON example</p>
 
-<div class="col mt-4 ad-api-xml-json-code-container">                
+<div class="col mt-4 ad-api-xml-json-code-container" data-aos="fade" data-aos-duration="1500" data-aos-once="true">                
                 <div class="sb-white-bg ad-api-xml-json-code">
     <pre class="sb-api-documentation-direction-json">
-&lt;RESULTS&gt;
-    &lt;API_TYPE&gt;<span class="ad-api-xml-json-code-black">api_loc2</span>&lt;/API_TYPE&gt;
-    &lt;API_NAME&gt;<span class="ad-api-xml-json-code-black">API - Line Type and Carrier (Standard)</span>&lt;/API_NAME&gt;
-    &lt;DAILY&gt;<span class="ad-api-xml-json-code-black">1</span>&lt;/DAILY&gt;
-    &lt;MONTHLY&gt;<span class="ad-api-xml-json-code-black">4</span>&lt;/MONTHLY&gt;
-    &lt;RATE&gt;<span class="ad-api-xml-json-code-black">0.0100</span>&lt;/RATE&gt;
-    &lt;BALANCE&gt;<span class="ad-api-xml-json-code-black">47.72</span>&lt;/BALANCE&gt;
-    &lt;PREPAID&gt;<span class="ad-api-xml-json-code-black">100.00</span>&lt;/PREPAID&gt;
-    &lt;DATE&gt;<span class="ad-api-xml-json-code-black">01/12/2023</span>&lt;/DATE&gt;
-&lt;/RESULTS&gt;
-
+"searchTime": <span class="ad-api-xml-json-code-green">"1/26/2024 2:25PM"</span><span class="ad-api-xml-json-code-black">,</span>
+"rows": <span class="ad-api-xml-json-code-blue">1</span><span class="ad-api-xml-json-code-black">,</span>
+"errors": <span class="ad-api-xml-json-code-green">""</span><span class="ad-api-xml-json-code-black">,</span>
+"people": <span class="ad-api-xml-json-code-black">{</span>
+ "person": <span class="ad-api-xml-json-code-black">{</span>
+   "gender": <span class="ad-api-xml-json-code-green">""</span>,
+   "deceased": <span class="ad-api-xml-json-code-green">"No"</span>,
+   "names": <span class="ad-api-xml-json-code-black">{</span>
+     "#text": <span class="ad-api-xml-json-code-green">"c"</span>,
+     "name": <span class="ad-api-xml-json-code-black">[
+{</span>
+   "title": <span class="ad-api-xml-json-code-green">""</span><span class="ad-api-xml-json-code-black">,</span>
+   "firstName": <span class="ad-api-xml-json-code-green">"David"</span>,
     </pre>
         </div>               
-                </div>
-
-
+</div>
 
             <h2 class="mt-4">Example of No Results</h2>
-
-
-<div class="col mt-4 ad-api-xml-json-code-container">                
+<div class="col mt-4 ad-api-xml-json-code-container" data-aos="fade" data-aos-duration="1500" data-aos-once="true">                
                 <div class="sb-white-bg ad-api-xml-json-code">
     <pre class="sb-api-documentation-direction-xml">
-&lt;RESULTS&gt;
-    &lt;API_TYPE&gt;<span class="ad-api-xml-json-code-black">api_loc2</span>&lt;/API_TYPE&gt;
-    &lt;API_NAME&gt;<span class="ad-api-xml-json-code-black">API - Line Type and Carrier (Standard)</span>&lt;/API_NAME&gt;
-    &lt;DAILY&gt;<span class="ad-api-xml-json-code-black">1</span>&lt;/DAILY&gt;
-    &lt;MONTHLY&gt;<span class="ad-api-xml-json-code-black">4</span>&lt;/MONTHLY&gt;
-    &lt;RATE&gt;<span class="ad-api-xml-json-code-black">0.0100</span>&lt;/RATE&gt;
-    &lt;BALANCE&gt;<span class="ad-api-xml-json-code-black">47.72</span>&lt;/BALANCE&gt;
-    &lt;PREPAID&gt;<span class="ad-api-xml-json-code-black">100.00</span>&lt;/PREPAID&gt;
-    &lt;DATE&gt;<span class="ad-api-xml-json-code-black">01/12/2023</span>&lt;/DATE&gt;
-&lt;/RESULTS&gt;
+<span class="ad-api-xml-json-code-blue">&lt;?xml version="1.0" encoding="ISO-8859-1" standalone="true"?&gt;</span>
+<span class="ad-api-xml-json-code-blue">&lt;</span>RESULTS<span class="ad-api-xml-json-code-blue">&gt;</span>
+	<span class="ad-api-xml-json-code-blue">&lt;</span>FOUND<span class="ad-api-xml-json-code-blue">&gt;</span><span class="ad-api-xml-json-code-black">NO</span><span class="ad-api-xml-json-code-blue">&lt;/</span>FOUND<span class="ad-api-xml-json-code-blue">&gt;</span>
+<span class="ad-api-xml-json-code-blue">&lt;/</span>RESULTS<span class="ad-api-xml-json-code-blue">&gt;</span>
+
+<span class="ad-api-xml-json-code-black">{
+	STATUS:</span> <span class="ad-api-xml-json-code-green">"NORESULTS"</span><span class="ad-api-xml-json-code-black">,</span>
+	<span class="ad-api-xml-json-code-black">DATA:</span> <span class="ad-api-xml-json-code-green">""</span><span class="ad-api-xml-json-code-black">,</span>
+	<span class="ad-api-xml-json-code-black">ERROR:</span> <span class="ad-api-xml-json-code-green">""</span>
+<span class="ad-api-xml-json-code-black">}</span>
 
     </pre>
         </div>               
                 </div>
-
-
             </div>
         </section>
 
@@ -818,13 +816,13 @@ https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://dilsondecano.github.io/people-search-api/images/technical-details-contact-icon.png" alt="Alternate Text" />
+                <img src="https://dilsondecano.github.io/people-search-api/images/technical-details-contact-icon.png" alt="Alternate Text" data-aos="fade" data-aos-duration="1500" data-aos-once="true" />
                 <div class="api-documentation-contact-us-header">For further technical details please contact</div>
                 <div class="api-documentation-contact-us-email"><a href="mailto:andre@searchbug.com">andre@searchbug.com</a></div>
 
             </div>
             <div class="col">
-                <img src="https://dilsondecano.github.io/people-search-api/images/sales-pricing-contact-icon.png" alt="Alternate Text" />
+                <img src="https://dilsondecano.github.io/people-search-api/images/sales-pricing-contact-icon.png" alt="Alternate Text" data-aos="fade" data-aos-duration="1500" data-aos-once="true" />
                 <div class="api-documentation-contact-us-header">For sales and pricing, please contact</div>
                 <div class="api-documentation-contact-us-email"><a href="mailto:noah@searchbug.com">noah@searchbug.com</a></div>
 
@@ -836,8 +834,9 @@ https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=
 
 
 
-    <script>
-  AOS.init();
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 
     <script>
@@ -853,9 +852,20 @@ https://data.searchbug.com/api/search.aspx? CO_CODE=&PASS=&TYPE=STATUS&TYPE_API=
         $('.ad-people-search-api-left-btn').click(function () {
             $(this).toggleClass("click");       
             $(".ad-sidebar-submenu").toggleClass("show");                 
+            $("#sb-ad-overlay").toggleClass("active");                 
+            $("body").toggleClass("sb-ad-overlay-active");                 
+            $("html").toggleClass("sb-ad-overlay-active");                             
+        })
+
+        $('#sb-ad-overlay').click(function () {
+            
+            $(".ad-sidebar-submenu").toggleClass("show");
+            $(this).toggleClass("active");
+            
+
         })
                 
-
+        
     </script>
 
 
